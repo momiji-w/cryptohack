@@ -1,0 +1,14 @@
+p = 65537 
+a = 273246787654^65536
+
+theorem stated that if a is not divisible by p
+theorem a^p-1 === 1 mod p
+
+so we have a^p-1 % p = 1
+
+(273246787654^65536) % 65537 = 1
+
+p = 13
+a = 3
+a^p-1 === 1 mod p
+3^12 === 1 mod 13
