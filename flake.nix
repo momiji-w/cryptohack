@@ -20,6 +20,7 @@
       in {
         default = pkgs.${system}.mkShellNoCC {
           packages = with pkgs.${system}.python311Packages; [
+            requests
             pycryptodome
             pwntools
           ];
