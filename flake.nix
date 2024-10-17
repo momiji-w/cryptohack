@@ -19,10 +19,11 @@
         inherit (poetry2nix.lib.mkPoetry2Nix { pkgs = pkgs.${system}; }) mkPoetryEnv;
       in {
         default = pkgs.${system}.mkShellNoCC {
-          packages = with pkgs.${system}.python311Packages; [
-            requests
-            pycryptodome
-            pwntools
+          packages = with pkgs.${system}; [
+            python311Packages.requests
+            python311Packages.pycryptodome
+            python311Packages.pwntools
+            sage
           ];
         };
       });
