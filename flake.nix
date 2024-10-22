@@ -23,6 +23,7 @@
             python311Packages.requests
             python311Packages.pycryptodome
             python311Packages.pwntools
+            python311Packages.tqdm
             sage
           ];
         };
